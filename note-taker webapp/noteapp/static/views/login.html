@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+    body {
+        background: linear-gradient(5deg, rgba(138, 184, 243, 0.534), rgb(19, 110, 196), rgb(94, 170, 206));
+    }
+
+    .link {
+        color: white;
+        font-size: large;
+    }
+
+    .link :nth-child(1) {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(0, 140, 255);
+        padding: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block auth_form %}
+{% for message in get_flashed_message %}
+<p>{{ message }}</p>
+{% endfor %}
+{% if login %}
+
+<form class="authform login" method="POST">
+    <label class="authlabel" for="email">
+        <p>Email</p>
+        <input id="email" type="email" placeholder="enter email" required />
+    </label>
+
+    <label class="authlabel" for="password">
+        <p>Password</p>
+        <input id="password" type="password" placeholder="enter password" required />
+    </label>
+    <input id="submit" type="submit" value="LogIn" />
+    <br />
+    <p class="link">Need an account? <a href="{{ url_for('auth.sign_up') }}">SignUp here</a></p>
+</form>
+
+
+{% elif not login %}
+<form class="authform register" method="POST">
+    <label class="authlabel" for="email">
+        <p>Email</p>
+    </label>
+    <input id="email" type="email" placeholder="enter email" required />
+
+    <label class="authlabel" for="password">
+        <p>Password</p>
+    </label>
+    <input id="password" type="password" placeholder="enter password" required />
+    <label class="authlabel" for="confirm">
+        <p>Confirm</p>
+    </label>
+    <input id="confirm-password" type="password" placeholder="confirm password" required />
+    <input id="submit" type="submit" value="SignUp" />
+    <br />
+    <p class="link">Have an account <a href="{{url_for('auth.login')}}">Login here</a></p>
+</form>
+
+{% endif %}
+{% endblock %}

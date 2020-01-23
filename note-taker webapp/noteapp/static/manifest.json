@@ -1,0 +1,33 @@
+{
+    "short_name": "kwala (note taker)",
+    "name": "kwala (note taker)",
+    "author": "K.T Motshoana",
+    "description": "A simple note taker.",
+    "lang": "en-US",
+    "background_color": "transparent",
+    "theme_color": "transparent",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "images/n144.png",
+            "sizes": "144x144",
+            "type":"image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "images/n152.png",
+            "sizes": "152x152",
+            "type":"image/png",
+            "purpose": "maskable any"
+        },
+        {
+            "src": "images/n192.png",
+            "sizes": "192x192",
+            "type":"image/png",
+            "purpose": "maskable any"
+        }
+        
+    ]
+}

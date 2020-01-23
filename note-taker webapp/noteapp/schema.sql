@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS badirisi;
+DROP TABLE IF EXISTS notes;
+
+CREATE TABLE users (
+    id UUID PRIMARY KEY NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
+
+CREATE TABLE notes (
+    id UUID PRIMARY KEY NOT NULL ,
+    author_id INTEGER NOT NULL, 
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    body TEXT NOT NULL,
+    FOREIGN KEY (author_id) REFERENCES user (id)
+);

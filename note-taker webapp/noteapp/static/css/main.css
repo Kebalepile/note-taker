@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    max-height: 100vh;
+}
+
+/* notes page */
+nav {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    right: 1px;
+    top: 3px;
+    z-index: 3;
+    position: absolute;
+}
+
+.btn {
+    background: linear-gradient(30deg, rgb(82, 173, 216), rgb(0, 89, 255));
+    border: none;
+    width: 50px;
+    height: 25px;
+}
+
+nav>* {
+    margin: 10px;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+}
+
+.container {
+    margin: 60px auto;
+    height: 500px;
+    width: 60%;
+    overflow-y:auto;
+}
+
+.note {
+    width: 100%;
+    margin-top: 5px;
+    display: flex
+}
+
+.done {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.done :nth-child(1) {
+    border: none;
+    background-color: rgb(216, 66, 66);
+    width: 50px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.msg {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word;
+    text-align: left;
+    line-height: 1.2;
+    padding: 5px;
+    border: 1px solid skyblue;
+    background-color: rgb(248, 243, 178);
+}
+
+/* about css */
+#about {
+    background: linear-gradient(50deg, rgb(14, 103, 204), rgba(27, 29, 163, 0.801));
+    width: 250px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 30%;
+    padding: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* authentication css */
+.authform {
+    width: 300px;
+    margin: 370px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.authlabel {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(50deg,
+            rgb(6, 103, 148), rgb(0, 89, 255));
+}
+
+.authlabel :nth-child(1) {
+    text-align: center;
+    margin-left: 5px;
+    width: 60px;
+}
+
+#password {
+    margin-left: 10px;
+    height: 100%;
+}
+
+#confirm-password {
+    margin-left: 10px;
+    height: 100%;
+}
+
+#email {
+    margin-left: 10px;
+    height: 100%;
+}
+
+#submit {
+    height: 30px;
+    width: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(30deg,
+            rgb(82, 173, 216), rgb(0, 89, 255));
+    border-radius: 2px;
+}
+
+/* note form */
+.note_form {
+    position: fixed;
+    top:50px;
+    left:100px;
+    right: 50px;
+    overflow: hidden;
+    max-width: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    background: linear-gradient(30deg,
+            rgb(82, 173, 216),
+            rgba(0, 89, 255, 0.555));
+    padding: 10px;
+    z-index: 3;
+}
+
+.note_form > * {
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.note_form :nth-child(1) {
+    background-color: rgb(6, 44, 94);
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid white;
+
+}
+
+#note {
+    font-size: x-large;
+    font-weight: bolder;
+    border: 1px solid rgb(11, 183, 252);
+}
+
+#choice {
+    align-self: center;
+}
+
+#choice > * {
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#save_note {
+    background-color: green;
+    width: 50px;
+}
+
+#cancel {
+    background-color: red;
+    width: 60px;
+    margin-left: 15px;
+}
+#newNote{
+    width:50px;
+}
