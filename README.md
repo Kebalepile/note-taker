@@ -1,3 +1,3 @@
 # note-taker
 a fullstack note taker web app.
-only runs localy on an OS
+currently only runs locally on an OS
