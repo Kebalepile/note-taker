@@ -1,0 +1,33 @@
+{
+  "short_name": "Short-NoTe",
+  "name": "Short-NoTe",
+  "description": "a short note scribbler webApp with features such as deadline notification alert, voice record notes.",
+  "author": "K.T Motshoana",
+  "lang": "en-US",
+  "start_url": ".",
+  "background_color": "#FFFF",
+  "theme_color": "#31b1b8",
+  "scope": "/",
+  
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/images/icons/144x144.png",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
